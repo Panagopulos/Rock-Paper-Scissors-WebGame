@@ -1,11 +1,35 @@
 body{
-  background-color: rgb(25, 25, 25);
+  background-color: rgb(49, 45, 45);
   color: white;
   font-family: Arial;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+
+}
+
+p{
+  text-align: center;
+  align-items: center;
+}
+
+.container{
+  border: 3px solid ;
+  border-radius: 15px;
+  padding: 40px;
+
+}
+
+.btn-container{
+
+  align-items: center;
+  text-align: center;
 }
 
 .title{
-  font: size 30px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -37,7 +61,22 @@ body{
 .auto-play-button {
   background-color: white;
   border: none;
+  border-radius: 15px 0px 0px 0px;
   font-size: 15px;
+  font-family: 'Arial';
+  margin: 7px;
   padding: 8px 15px;
   cursor: pointer;
+}
+
+.reset-score-button:hover{
+  background-color: hsl(236, 83%, 65%);
+  color: white;
+  transition: 0.2s;
+}
+
+.auto-play-button:hover{
+  background-color: hsl(101, 58%, 53%);
+  color: white;
+  transition: 0.2s;
 }

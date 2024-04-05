@@ -6,26 +6,30 @@
     href="styles/12-rock-paper-scissors.css">
   </head>
       <body>
+        <div class="container">
         <p class="title">Rock Paper Scissors</p>
+          <div class="image-container">
+              <button class="move-button js-rock-button"><img src="assets/rock.png" class="move-icon">
+              </button>
 
-        <button class="move-button js-rock-button"><img src="images/rock-emoji.png" class="move-icon">
-        </button>
+              <button class="move-button js-paper-button" ><img src="assets/paper.png" class="move-icon"></button>
 
-        <button class="move-button js-paper-button" ><img src="images/paper-emoji.png" class="move-icon"></button>
+              <button class="move-button js-scissors-button"><img src="assets/scissors.png" class="move-icon"></button>
+          </div>
+          <div class="result-container">
+                <p class="js-result result"></p>
 
-        <button class="move-button js-scissors-button"><img src="images/scissors-emoji.png" class="move-icon"></button>
+                <p class="js-moves"></p>
+                
+                <p class="js-score score"></p>
+          </div>
+          <div class="btn-container">
+                <button class="reset-score-button">Reset Score</button>
 
-
-          <p class="js-result result"></p>
-
-          <p class="js-moves"></p>
-          
-          <p class="js-score score"></p>
-
-        <button class="reset-score-button">Reset Score</button>
-
-        <button class="auto-play-button">Auto Play</button>
-
+                <button class="auto-play-button">Auto Play</button> <br/>
+                <p>You can use key <strong>"A"</strong> for Auto Play and <strong>"R","P","S"</strong> for <br/> choosing your move.</p>
+          </div>      
+        </div>
           <script src="scripts/12-rock-paper-scissors.js"></script>
       </body>
   </html>

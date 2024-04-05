@@ -14,7 +14,7 @@
   losses: 0,
   ties: 0,
 };
-/* same as above but we used default value ||
+/* stejné jako nad námi ale používáme default value ||
 if(!score) {
   score = {
     wins: 0,
@@ -38,12 +38,12 @@ autoPlayButton.addEventListener('click',() => {
   autoPlayUpdate();
 });
 
-autoPlayButton.addEventListener('keydown', (event) => {
+document.body.addEventListener('keydown', (event) => {
   if(event.key === 'a') {
     autoPlay();
     autoPlayUpdate();
-  }
-})
+  };
+});
 
 function autoPlayUpdate() {
   if(autoPlayButton.innerHTML === 'Auto Play') {
@@ -143,9 +143,9 @@ if(playerMove ==='scissors') {
   .innerHTML = result;
 
   document.querySelector('.js-moves').innerHTML = `You 
-<img src="images/${playerMove}-emoji.png" 
+<img src="assets/${playerMove}.png" 
 class="move-icon">
-<img src="images/${computerMove}-emoji.png" class="move-icon">
+<img src="assets/${computerMove}.png" class="move-icon">
 Computer`;
 
 }
